@@ -1,0 +1,18 @@
+.container-lines {
+	--lines-color:rgba(255,0,0,.1);
+
+	&:before {
+		content:'';
+		position:fixed;
+		left:50%;
+		top:0;
+		bottom:0;
+		width:calc(100% - (2 * var(--cont-p)));
+		max-width:var(--cont-w);
+		pointer-events:none;
+		z-index:10;
+		transform:translateX(-50%);
+		border-left:var(--lines-color) solid 1px;
+		border-right:var(--lines-color) solid 1px;
+	}
+}

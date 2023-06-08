@@ -1,0 +1,24 @@
+.ui {
+	&-accordion {
+		--acc-height:auto;
+		height:var(--acc-height);
+
+		&__panel {
+			display: none;
+		}
+
+		&__item.sizing & {
+			&__panel {
+				display:block!important;
+				height:auto!important;
+				overflow:visible!important;
+				opacity:1!important;
+				visibility:visible!important;
+			}
+		}
+
+		&.sizing {
+			--acc-height:auto!important;
+		}
+	}
+}

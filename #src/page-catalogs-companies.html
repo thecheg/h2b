@@ -1,0 +1,455 @@
+@@include('@@webRoot/template/_head.html',{
+	'pageTitle': 'Каталог компаний',
+	'pageKeywords': '',
+	'pageDescription': ''
+})
+</head>
+<body class="app">
+@@include('@@webRoot/template/_header.html')
+	<main class="app__content">
+		<section class="section first first--s">
+			<div class="first__bg first__bg--2"></div>
+			<div class="container">
+				<div class="first__block">
+					<div class="first__left">
+						<div class="first__link">
+							<a class="ui-link ui-link--light" href="javbascript:void(0);">
+								<span class="ui-link__text">
+									Узнать больше
+								</span>
+								<span class="ui-link__icon">
+									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-btn-arrow"></use></svg>
+								</span>
+							</a>
+						</div>
+						<div class="first__link">
+							<a class="ui-link ui-link--light" href="javbascript:void(0);">
+								<span class="ui-link__text">
+									Каталог предложений
+								</span>
+								<span class="ui-link__icon">
+									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-btn-arrow"></use></svg>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="first__right">
+						<div class="first__name">
+							Для бизнеса
+						</div>
+						<header class="head head--in-cont head--no-m first__head">
+							<h1 class="head__btitle">
+								Каталог компаний
+							</h1>
+							<div class="head__subtitle head__subtitle--s2" style="max-width:500px;">
+								Откройте новые возможности для&nbsp;своей компании, создав бизнес-страницу
+							</div>
+							<div class="first__btn">
+								<a class="ui-btn ui-btn--t1 ui-btn--light" href="javascript:void(0);">
+									<span class="ui-btn__round"></span>
+									<span class="ui-btn__text">
+										Создать бизнес-страницу
+									</span>
+								</a>
+							</div>
+						</header>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section--h search catalog" style="--section-bg:#F0F7F8;">
+			<div class="container">
+				<div class="search__line">
+					<form class="search__line-in">
+						<div class="search__line-left">
+							<div class="ui-select ui-select--t2 ui-select--c3">
+								<select multiple data-placeholder="Компании">
+									<option>
+										Новости
+									</option>
+									<option>
+										Интервью
+									</option>
+									<option>
+										Статья
+									</option>
+									<option selected>
+										Бизнес-страницы
+									</option>
+									<option>
+										Каталог предложений
+									</option>
+								</select>
+							</div>
+						</div>
+						<div class="search__line-right">
+							<div class="search__line-inp">
+								<input type="text" placeholder="Найти компанию по названию или ИНН" />
+							</div>
+							<div class="search__line-clear">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cross"></use></svg>
+							</div>
+							<button class="search__line-btn" type="submit">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use></svg>
+							</button>
+						</div>
+					</form>
+				</div>
+				<div class="catalog__sort ui-sort">
+					<div class="ui-sort__col">
+						<div class="ui-sort__total">
+							Все <span>34 компании</span>
+						</div>
+					</div>
+					<div class="ui-sort__col">
+						<div class="ui-sort__row">
+							<a class="ui-sort__btn">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-sort"></use></svg>
+								Сначала популярные
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="ui-page">
+					<div class="ui-page__side">
+						<div class="ui-filters">
+							<div class="ui-filters__trigger">
+								Фильтр
+							</div>
+							<div class="ui-grid ui-filters__list">
+								<div class="ui-grid__col ui-filters__item">
+									<div class="ui-select ui-select--h2 ui-select--c2">
+										<select data-placeholder="Тип компании">
+											<option></option>
+											<option>
+												Тип компании1
+											</option>
+											<option>
+												Тип компании2
+											</option>
+											<option>
+												Тип компании3
+											</option>
+											<option>
+												Тип компании4
+											</option>
+										</select>
+									</div>
+								</div>
+								<div class="ui-grid__col ui-filters__item">
+									<div class="ui-select ui-select--h2 ui-select--c2">
+										<select data-placeholder="Страна">
+											<option></option>
+											<option>
+												Страна1
+											</option>
+											<option>
+												Страна2
+											</option>
+											<option>
+												Страна3
+											</option>
+											<option>
+												Страна4
+											</option>
+										</select>
+									</div>
+								</div>
+								<div class="ui-grid__col ui-filters__item">
+									<div class="ui-select ui-select--h2 ui-select--c2">
+										<select data-placeholder="Город">
+											<option></option>
+											<option>
+												Город1
+											</option>
+											<option>
+												Город2
+											</option>
+											<option>
+												Город3
+											</option>
+											<option>
+												Город4
+											</option>
+										</select>
+									</div>
+								</div>
+								<div class="ui-grid__col ui-filters__item ui-filters__range">
+									<div class="ui-filters__range-ttl">
+										Количество сотрудников
+									</div>
+									<div class="ui-filters__range-inp" data-inp="От">
+										<input type="number" />
+									</div>
+									<div class="ui-filters__range-inp" data-inp="До">
+										<input type="number" />
+									</div>
+								</div>
+								<div class="ui-grid__col ui-filters__item">
+									<label class="ui-check ui-check--green">
+										<input type="checkbox" />
+										<span class="ui-check__icon ui-check__icon--cb"></span>
+										<span class="ui-check__text">
+											С оценкой ИНТИ
+										</span>
+									</label>
+								</div>
+								<div class="ui-grid__col ui-filters__item">
+									<label class="ui-check ui-check--green">
+										<input type="checkbox" />
+										<span class="ui-check__icon ui-check__icon--cb"></span>
+										<span class="ui-check__text">
+											С каталогом продуктов
+										</span>
+									</label>
+								</div>
+								<div class="ui-grid__col ui-filters__item ui-filters__btn">
+									<a class="ui-btn ui-btn--t1 ui-btn--dark">
+										<span class="ui-btn__round"></span>
+										<span class="ui-btn__text">
+											Применить
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ui-page__main">
+						<div class="catalog__companies">
+							<div class="catalog__companies-item">
+								<a class="ui-company">
+									<div class="ui-company__left">
+										<div class="ui-company__logo">
+											<img src="@@webRoot/images/company1.jpg" alt="" loading="lazy" />
+										</div>
+									</div>
+									<div class="ui-company__center">
+										<div class="ui-badges ui-company__feats">
+											<div class="ui-badges__item" style="--feat-bg:#1E2C2F;--feat-color:#fff;">
+												Ассоциация
+											</div>
+											<div class="ui-badges__item" style="--feat-bg:#2A87CE;--feat-color:#fff;">
+												<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cert"></use></svg> С оценкой ИНТИ
+											</div>
+										</div>
+										<div class="ui-company__ttl">
+											Ассоциация Буровых Подрядчиков
+										</div>
+										<div class="ui-company__loc">
+											Россия, Москва
+										</div>
+										<div class="ui-company__text">
+											Отечественная Ассоциация буровых подрядчиков была создана в 1991 году. Ее основатели – буровые предприятия и организации Министерств нефтяной и газовой промышленности.
+										</div>
+										<div class="ui-tags ui-company__tags">
+											<div class="ui-tags__item">
+												#бурение
+											</div>
+											<div class="ui-tags__item">
+												#геологоразведка
+											</div>
+											<div class="ui-tags__item">
+												#добыча
+											</div>
+										</div>
+									</div>
+									<div class="ui-company__details">
+										<div class="ui-company__details-item">
+											Год основания <span>1991</span>
+										</div>
+										<div class="ui-company__details-item">
+											Сотрудников <span>10-50</span>
+										</div>
+										<div class="ui-company__details-item">
+											Размещено продуктов <span>40</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="catalog__companies-item">
+								<a class="ui-company">
+									<div class="ui-company__left">
+										<div class="ui-company__logo">
+											<img src="@@webRoot/images/company2.jpg" alt="" loading="lazy" />
+										</div>
+									</div>
+									<div class="ui-company__center">
+										<div class="ui-badges ui-company__feats">
+											<div class="ui-badges__item" style="--feat-bg:#1E2C2F;--feat-color:#fff;">
+												Ассоциация
+											</div>
+										</div>
+										<div class="ui-company__ttl">
+											PETROPORTAL
+										</div>
+										<div class="ui-company__loc">
+											Россия, Москва
+										</div>
+										<div class="ui-company__text">
+											Отечественная Ассоциация буровых подрядчиков была создана в 1991 году. Ее основатели – буровые предприятия и организации Министерств нефтяной и газовой промышленности.
+										</div>
+										<div class="ui-tags ui-company__tags">
+											<div class="ui-tags__item">
+												#бурение
+											</div>
+											<div class="ui-tags__item">
+												#геологоразведка
+											</div>
+											<div class="ui-tags__item">
+												#добыча
+											</div>
+										</div>
+									</div>
+									<div class="ui-company__details">
+										<div class="ui-company__details-item">
+											Год основания <span>-</span>
+										</div>
+										<div class="ui-company__details-item">
+											Сотрудников <span>-</span>
+										</div>
+										<div class="ui-company__details-item">
+											Размещено продуктов <span>-</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="catalog__companies-item">
+								<a class="ui-company">
+									<div class="ui-company__left">
+										<div class="ui-company__logo">
+											<img src="@@webRoot/images/company1.jpg" alt="" loading="lazy" />
+										</div>
+									</div>
+									<div class="ui-company__center">
+										<div class="ui-badges ui-company__feats">
+											<div class="ui-badges__item" style="--feat-bg:#1E2C2F;--feat-color:#fff;">
+												Ассоциация
+											</div>
+											<div class="ui-badges__item" style="--feat-bg:#2A87CE;--feat-color:#fff;">
+												<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cert"></use></svg> С оценкой ИНТИ
+											</div>
+										</div>
+										<div class="ui-company__ttl">
+											Ассоциация Буровых Подрядчиков
+										</div>
+										<div class="ui-company__loc">
+											Россия, Москва
+										</div>
+										<div class="ui-company__text">
+											Отечественная Ассоциация буровых подрядчиков была создана в 1991 году. Ее основатели – буровые предприятия и организации Министерств нефтяной и газовой промышленности.
+										</div>
+										<div class="ui-tags ui-company__tags">
+											<div class="ui-tags__item">
+												#бурение
+											</div>
+											<div class="ui-tags__item">
+												#геологоразведка
+											</div>
+											<div class="ui-tags__item">
+												#добыча
+											</div>
+										</div>
+									</div>
+									<div class="ui-company__details">
+										<div class="ui-company__details-item">
+											Год основания <span>1991</span>
+										</div>
+										<div class="ui-company__details-item">
+											Сотрудников <span>10-50</span>
+										</div>
+										<div class="ui-company__details-item">
+											Размещено продуктов <span>40</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="catalog__companies-item">
+								<a class="ui-company">
+									<div class="ui-company__left">
+										<div class="ui-company__logo">
+											<img src="@@webRoot/images/company2.jpg" alt="" loading="lazy" />
+										</div>
+									</div>
+									<div class="ui-company__center">
+										<div class="ui-badges ui-company__feats">
+											<div class="ui-badges__item" style="--feat-bg:#1E2C2F;--feat-color:#fff;">
+												Ассоциация
+											</div>
+										</div>
+										<div class="ui-company__ttl">
+											PETROPORTAL
+										</div>
+										<div class="ui-company__loc">
+											Россия, Москва
+										</div>
+										<div class="ui-company__text">
+											Отечественная Ассоциация буровых подрядчиков была создана в 1991 году. Ее основатели – буровые предприятия и организации Министерств нефтяной и газовой промышленности.
+										</div>
+										<div class="ui-tags ui-company__tags">
+											<div class="ui-tags__item">
+												#бурение
+											</div>
+											<div class="ui-tags__item">
+												#геологоразведка
+											</div>
+											<div class="ui-tags__item">
+												#добыча
+											</div>
+										</div>
+									</div>
+									<div class="ui-company__details">
+										<div class="ui-company__details-item">
+											Год основания <span>-</span>
+										</div>
+										<div class="ui-company__details-item">
+											Сотрудников <span>-</span>
+										</div>
+										<div class="ui-company__details-item">
+											Размещено продуктов <span>-</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="catalog__pager ui-pager">
+							<a class="ui-pager__item current">
+								1
+							</a>
+							<a class="ui-pager__item">
+								2
+							</a>
+							<a class="ui-pager__item">
+								3
+							</a>
+							<a class="ui-pager__item">
+								4
+							</a>
+							<a class="ui-pager__item">
+								5
+							</a>
+							<a class="ui-pager__item">
+								6
+							</a>
+							<a class="ui-pager__item">
+								7
+							</a>
+							<a class="ui-pager__item">
+								8
+							</a>
+							<a class="ui-pager__item">
+								9
+							</a>
+							<a class="ui-pager__item">
+								10
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+@@include('@@webRoot/template/_request.html')
+	</main>
+@@include('@@webRoot/template/_footer.html')
+@@include('@@webRoot/template/_foot.html')
+</body>
+</html>

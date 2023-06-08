@@ -1,0 +1,77 @@
+@@include('@@webRoot/template/_head.html',{
+	'pageTitle': 'Регистрация',
+	'pageKeywords': '',
+	'pageDescription': ''
+})
+</head>
+<body class="app" data-theme="login">
+	<div class="app__inner">
+		<main class="app__content">
+			<section class="section login">
+				<div class="container login__container">
+					<div class="login__fp login__fp--1">
+						<img src="@@webRoot/images/login-fp.svg" alt="" />
+					</div>
+					<div class="login__block">
+						<div class="login__fp login__fp--2">
+							<img src="@@webRoot/images/login-fp2.svg" alt="" />
+						</div>
+						<div class="login__block-in">
+							<div class="login__col login__col--l">
+								<a class="login__logo" href="@@webRoot/">
+									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>
+								</a>
+								<div class="head head--in-cont head--no-m login__head">
+									<h1 class="head__title">
+										Регистрация
+									</h1>
+									<div class="head__subtitle">
+										Станьте частью бизнес-сети H2B — позиционируйте себя на платформе, станьте активным участником трансформации добывающей промышленности РФ
+									</div>
+								</div>
+							</div>
+							<div class="login__col login__col--r">
+								<div class="login__step">
+									Шаг 2 <span>из 3</span>
+								</div>
+								<div class="login__ttl">
+									<div class="login__ttl-m">
+										Создать аккаунт
+									</div>
+									<div class="login__ttl-s">
+										Введите код который был выслан вам на E-mail в соответствующее поле. Если код не пришёл, попробуйте отправить повторно.
+									</div>
+								</div>
+								<form class="login__form">
+									<div class="login__form-item">
+										<label class="ui-input ui-input--light">
+											<input type="text" placeholder="Код подтверждения" />
+										</label>
+									</div>
+									<div class="login__form-item">
+										<button class="ui-simplebtn ui-simplebtn--dark2 login__form-btn" type="submit">
+											Подтвердить регистрацию
+										</button>
+									</div>
+									<div class="login__form-item login__form-more">
+										<div class="login__form-more-item">
+											<a>Назад</a>
+										</div>
+										<div class="login__form-more-item login__form-agree">
+											Нажимая на кнопку, вы даёте согласие на обработку персональных данных в соответствии с <a>политикой конфиденциальности</a> и <a>пользовательским соглашением</a>.
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	@@include('@@webRoot/template/_footer.html', {
+		'type': 'login'
+	})
+	</div>
+@@include('@@webRoot/template/_foot.html')
+</body>
+</html>

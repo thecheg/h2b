@@ -1,0 +1,149 @@
+.ui {
+	&-crossbtn {
+		position:relative;
+		z-index:3;
+		width:22px;
+		height:22px;
+		cursor:pointer;
+	
+		&:before,
+		&:after {
+			display:block;
+			position:absolute;
+			content:'';
+			width:100%;
+			height:2px;
+			left:0;
+			top:10px;
+			background:$color-text;
+			transition:background .2s;
+		}
+		
+		&:before {
+			transform:rotate(45deg);
+		}
+		
+		&:after {
+			transform:rotate(-45deg);
+		}
+		
+		html.no-touch &:hover {
+			&:before,
+			&:after {
+				background:$color-green;
+			}
+		}
+	}
+}
+
+.popups-overlay {
+	--overlay-color:#{rgba($color-text,.8)};
+	position:fixed;
+	z-index:9999;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	background:var(--overlay-color);
+	transition:opacity .4s, visibility .4s;
+
+	.app:not(.app--popup-opened) & {
+		opacity:0;
+		visibility:hidden;
+		pointer-events: none;
+	}
+
+	@supports (backdrop-filter:blur()) {
+		backdrop-filter:blur(10px);
+	}
+}
+
+.popup {
+	position:fixed;
+	z-index:99999;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	overflow:hidden;
+	overflow-y:auto;
+	backface-visibility:hidden;
+	scroll-behavior: contain;
+	transition:opacity .4s, visibility .4s;
+	padding:20px;
+	display:flex;
+
+	opacity:0;
+	visibility:hidden;
+	pointer-events: none;
+
+	@media only screen and (max-width: 500px) {
+	
+		padding:0;
+	
+	}
+
+	&.active {
+		opacity:1;
+		visibility:visible;
+		pointer-events: all;
+	}
+	
+	&__content {
+		background:#fff;
+		width:100%;
+		margin:auto;
+		position:relative;
+	
+		&--video {
+			padding:0;
+			max-width:800px;
+		}
+
+		@media only screen and (max-width: 500px) {
+			min-height:100%;
+			max-width:none;
+		}
+	}
+
+	&__close {
+		position:absolute;
+		right:20px;
+		top:20px;
+	}
+	
+	&__head {
+		margin:0 auto 30px auto;
+		text-align:center;
+	
+		&-title {
+			font-size:24px;
+			line-height:1.2em;
+			font-weight:700;
+			margin:0 auto;
+		}
+		
+		&-subtitle {
+			font-size:16px;
+			line-height:1.2em;
+			font-weight:500;
+			padding-top:20px;
+			margin:0 auto;
+		}
+	}
+	
+	&__video {
+		width:100%;
+		height:0;
+		padding-bottom:56.25%;
+		position:relative;
+	
+		& iframe {
+			width:100%!important;
+			height:100%!important;
+			position:absolute;
+			left:0;
+			top:0;
+		}
+	}
+}

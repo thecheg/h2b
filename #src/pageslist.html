@@ -1,0 +1,149 @@
+@@include('@@webRoot/template/_head.html',{
+	'pageTitle': '',
+	'pageKeywords': '',
+	'pageDescription': ''
+})
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="@@webRoot/css/pageslist.css" />
+</head>
+<body class="app">
+	<main class="app__content">
+		<section class="section pageslist">
+			<div class="container" style="max-width:1000px;">
+				<div class="ui-grid pageslist__grid"></div>
+			</div>
+		</section>
+	</main>
+@@include('@@webRoot/template/_foot.html')
+<script>
+	const pages = [
+		[
+			{
+				ttl: 'Главная +',
+				file: 'index.html'
+			},
+			{
+				ttl: 'О платформе +',
+				file: 'page-about.html'
+			},
+		],
+		[
+			{
+				ttl: 'О каталогах +',
+				file: 'page-catalogs.html'
+			},
+			{
+				ttl: 'Каталог компаний +',
+				file: 'page-catalogs-companies.html'
+			},
+			{
+				ttl: 'Каталог предлолжений +',
+				file: 'page-catalogs-offers.html'
+			},
+		],
+		[
+			{
+				ttl: 'Бизнес-страница +',
+				file: 'page-business-page.html'
+			},
+		],
+		[
+			{
+				ttl: 'Мероприятия +',
+				file: 'page-events.html'
+			},
+			{
+				ttl: 'Статья +',
+				file: 'page-article.html'
+			},
+			{
+				ttl: 'Интервью +',
+				file: 'page-interview.html'
+			},
+		],
+		[
+			{
+				ttl: 'Поиск +',
+				file: 'page-search.html'
+			},
+			{
+				ttl: 'Поиск - результаты +',
+				file: 'page-search-results.html'
+			},
+		],
+		[
+			{
+				ttl: 'Политика конфедициальности +',
+				file: 'page-policy.html'
+			},
+			{
+				ttl: 'Пользовательское соглашение +',
+				file: 'page-terms.html'
+			},
+		],
+		[
+			{
+				ttl: 'Вход +',
+				file: 'page-cabinet-login.html'
+			},
+			{
+				ttl: 'Регистрация 1 +',
+				file: 'page-cabinet-register1.html'
+			},
+			{
+				ttl: 'Регистрация 2 +',
+				file: 'page-cabinet-register2.html'
+			},
+			{
+				ttl: 'Регистрация 3 +',
+				file: 'page-cabinet-register3.html'
+			},
+		],
+		[
+			{
+				ttl: 'Профиль',
+				file: 'page-cabinet.html'
+			},
+			{
+				ttl: 'Профиль - редактирование 1',
+				file: 'page-cabinet-edit1.html'
+			},
+			{
+				ttl: 'Профиль - редактирование 2',
+				file: 'page-cabinet-edit2.html'
+			},
+			{
+				ttl: 'Попапы',
+				file: 'page-cabinet-popups.html'
+			},
+		],
+	];
+	(function() {
+		$.each(pages, function(i) {
+			let sec = $(this);
+
+			$.each(sec, function(l) {
+				let page = sec[l];
+
+				$('.pageslist__grid').append(`
+					<div class="ui-grid__col pageslist__col">
+						<a class="pageslist__item" href="${page.file}" target="_blank">
+							<div class="pageslist__item-ttl">
+								${page.ttl}
+							</div>
+							<div class="pageslist__item-file">
+								${page.file}
+							</div>
+						</a>
+					</div>
+				`);
+			});
+
+			if (i < pages.length - 1) {
+				$('.pageslist__grid').append(`<div class="ui-grid__col pageslist__div"></div>`);
+			}
+		});
+	})(jQuery);
+</script>
+</body>
+</html>

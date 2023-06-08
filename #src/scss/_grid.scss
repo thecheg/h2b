@@ -1,0 +1,70 @@
+.ui {
+	&-grid {
+		--g-gap:20px;
+		--g-gap-b:var(--g-gap);
+
+		display:flex;
+		flex-wrap:wrap;
+
+		gap:var(--g-gap-b) var(--g-gap);
+
+		&__col {
+			display:flex;
+			flex-direction: column;
+			width:calc((100% - (var(--g-of) - 1) * var(--g-gap)) / var(--g-of) * var(--g-cols) + (var(--g-gap) * (var(--g-cols) - 1)));
+
+			&--1 {
+				--g-cols:1;
+				--g-of:1;
+			}
+
+			&--1of2,
+			&--2of4,
+			&--3of6,
+			&--4of8 {
+				--g-cols:1;
+				--g-of:2;
+			}
+
+			&--1of3 {
+				--g-cols:1;
+				--g-of:3;
+			}
+
+			&--2of3 {
+				--g-cols:2;
+				--g-of:3;
+			}
+
+			&--1of4 {
+				--g-cols:1;
+				--g-of:4;
+			}
+
+			&--3of4 {
+				--g-cols:3;
+				--g-of:4;
+			}
+
+			&--1of5 {
+				--g-cols:1;
+				--g-of:5;
+			}
+
+			&--2of5 {
+				--g-cols:2;
+				--g-of:5;
+			}
+
+			&--3of5 {
+				--g-cols:3;
+				--g-of:5;
+			}
+
+			&--4of5 {
+				--g-cols:4;
+				--g-of:5;
+			}
+		}
+	}
+}

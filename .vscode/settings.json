@@ -1,0 +1,12 @@
+{
+	"autoprefixer.formatOnSave": false,
+	"minify.minifyExistingOnSave": false,
+	"CSSNavigation.excludeGlobPatterns": [
+		"**/node_modules/**",
+		"**/bower_components/**",
+		"**/vendor/**",
+		"**/coverage/**",
+		"**/#src/scss/_responsive.scss",
+		"**/h2b/css/**"
+	]
+}

@@ -1,0 +1,186 @@
+@@include('@@webRoot/template/_head.html',{
+	'pageTitle': 'Личный кабинет',
+	'pageKeywords': '',
+	'pageDescription': ''
+})
+</head>
+<body class="app" data-theme="cabinet">
+@@include('@@webRoot/template/_header.html', {
+	'type': 'cabinet'
+})
+	<main class="app__content">
+		<section class="section cabinet">
+			<div class="container">
+				<div class="cabinet__block">
+@@include('@@webRoot/template/_cabinet-menu.html')
+					<div class="cabinet__main">
+@@include('@@webRoot/template/_cabinet-create.html')
+						<div class="cabinet__main-item">
+							<div class="cabinet__person">
+								<div class="cabinet__person-l">
+									<a class="cabinet__person-avatar cabinet__person-avatar--c"></a>
+								</div>
+								<div class="cabinet__person-r">
+									<div class="cabinet__edit">
+										<div class="ui-grid cabinet__edit-row">
+											<div class="ui-grid__col cabinet__edit-col cabinet__edit-col--h">
+												<div class="ui-grid cabinet__edit-row">
+													<div class="ui-grid__col cabinet__edit-col">
+														<label class="ui-input ui-input--light">
+															<input type="text" placeholder="Имя" value="Павел" />
+														</label>
+													</div>
+													<div class="ui-grid__col cabinet__edit-col">
+														<label class="ui-input ui-input--light">
+															<input type="text" placeholder="Имя" value="Перевалов" />
+														</label>
+													</div>
+													<div class="ui-grid__col cabinet__edit-col">
+														<label class="ui-input ui-input--light">
+															<input type="tel" placeholder="Телефон" />
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="ui-grid__col cabinet__edit-col cabinet__edit-col--h">
+												<div class="ui-grid cabinet__edit-row">
+													<div class="ui-grid__col cabinet__edit-col">
+														<label class="ui-input ui-input--light">
+															<input type="email" placeholder="E-mail" value="idea@mail.ru" />
+														</label>
+													</div>
+													<div class="ui-grid__col cabinet__edit-col">
+														<div class="ui-select">
+															<select data-placeholder="Компания">
+																<option></option>
+																<option>
+																	Компания1
+																</option>
+																<option>
+																	Компания2
+																</option>
+																<option>
+																	Компания3
+																</option>
+																<option>
+																	Компания4
+																</option>
+																<option>
+																	Компания5
+																</option>
+															</select>
+														</div>
+													</div>
+													<div class="ui-grid__col cabinet__edit-col">
+														<label class="ui-input ui-input--light">
+															<input type="text" placeholder="Должность" />
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="ui-grid__col cabinet__edit-col">
+												<label class="ui-input ui-input--light">
+													<textarea placeholder="О себе" rows="1"></textarea>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="cabinet__btns">
+										<a class="ui-btn ui-btn--t2 ui-btn--t2-dark" type="button">
+											<span class="ui-btn__text">
+												Сохранить
+											</span>
+											<span class="ui-btn__icon ui-btn__icon--arr">
+												<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-btn-arrow"></use></svg>
+											</span>
+										</a>
+										<a class="ui-btn ui-btn--t3 ui-btn--t3-green" type="button">
+											<span class="ui-btn__text">
+												Изменить пароль
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="cabinet__main-item">
+							<div class="cabinet__top">
+								<div class="cabinet__top-i">
+									<div class="cabinet__top-ttl">
+										Профиль деятельности и интересы
+									</div>
+								</div>
+								<div class="cabinet__top-i">
+									<div class="ui-badges">
+										<div class="ui-badges__item" style="--feat-bg:#D64751;--feat-color:#fff;">
+											Выберите ваши интересы
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cabinet__more">
+								<div class="cabinet__more-item cabinet__area">
+									<div class="cabinet__area-item">
+										<div class="ui-select ui-select--c4">
+											<select multiple data-placeholder="Выбрать">
+												<option value="area1" data-area="area1">
+													бурение
+												</option>
+												<option value="area2" data-area="area2">
+													геологоразведка
+												</option>
+												<option value="area3" data-area="area3">
+													добыча
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="cabinet__area-item cabinet__area-popular">
+										Популярные: <a data-pop-area="area1">бурение</a>, <a data-pop-area="area2">геологоразведка</a>, <a data-pop-area="area3">добыча</a>
+									</div>
+								</div>
+								<div class="cabinet__more-item">
+									<label class="ui-check ui-check--green">
+										<input type="checkbox" />
+										<span class="ui-check__icon ui-check__icon--cb"></span>
+										<span class="ui-check__text">
+											Получать рассылку с новостями, статьями от компаний с такими же интересами 
+										</span>
+									</label>
+								</div>
+								<div class="cabinet__more-item">
+									<label class="ui-check ui-check--green">
+										<input type="checkbox" />
+										<span class="ui-check__icon ui-check__icon--cb"></span>
+										<span class="ui-check__text">
+											Получать рассылку со всеми новостями
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="cabinet__btns">
+								<button class="ui-btn ui-btn--t2 ui-btn--t2-dark" type="button" disabled>
+									<span class="ui-btn__text">
+										Сохранить
+									</span>
+									<span class="ui-btn__icon ui-btn__icon--arr">
+										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-btn-arrow"></use></svg>
+									</span>
+								</button>
+							</div>
+						</div>
+						<div class="cabinet__main-item cabinet__remove">
+							<a class="cabinet__remove-btn">
+								Удалить учетную запись
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+@@include('@@webRoot/template/_footer.html')
+@@include('@@webRoot/template/_popups-cabinet.html')
+@@include('@@webRoot/template/_foot.html')
+</body>
+</html>

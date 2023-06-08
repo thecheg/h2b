@@ -1,0 +1,33 @@
+@@include('@@webRoot/template/_head.html',{
+	'pageTitle': 'Личный кабинет',
+	'pageKeywords': '',
+	'pageDescription': ''
+})
+</head>
+<body class="app" data-theme="cabinet">
+@@include('@@webRoot/template/_header.html', {
+	'type': 'cabinet'
+})
+	<main class="app__content">
+		<section class="section cabinet">
+			<div class="container">
+				<a onclick="app.popups.open('change-password')">
+					Изменить пароль
+				</a><br /><br />
+				<a onclick="app.popups.open('password-changed')">
+					Пароль изменен
+				</a><br /><br /><br />
+				<a onclick="app.popups.open('remove-profile')">
+					Удаление профиля
+				</a><br /><br />
+				<a onclick="app.popups.open('remove-confirm')">
+					Удаление профиля - подтверждение
+				</a>
+			</div>
+		</section>
+	</main>
+@@include('@@webRoot/template/_footer.html')
+@@include('@@webRoot/template/_popups-cabinet.html')
+@@include('@@webRoot/template/_foot.html')
+</body>
+</html>

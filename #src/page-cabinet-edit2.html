@@ -1,0 +1,179 @@
+@@include('@@webRoot/template/_head.html',{
+	'pageTitle': 'Личный кабинет',
+	'pageKeywords': '',
+	'pageDescription': ''
+})
+</head>
+<body class="app" data-theme="cabinet">
+@@include('@@webRoot/template/_header.html', {
+	'type': 'cabinet'
+})
+	<main class="app__content">
+		<section class="section cabinet">
+			<div class="container">
+				<div class="cabinet__block">
+@@include('@@webRoot/template/_cabinet-menu.html')
+					<div class="cabinet__main">
+@@include('@@webRoot/template/_cabinet-create.html')
+						<div class="cabinet__main-item">
+							<div class="cabinet__person">
+								<div class="cabinet__person-l">
+									<a class="cabinet__person-avatar">
+										<img src="@@webRoot/images/cabinet-avatar.jpg" alt="" />
+									</a>
+								</div>
+								<div class="cabinet__person-r">
+									<div class="cabinet__top">
+										<div class="cabinet__top-i">
+											<div class="cabinet__top-ttl">
+												Перевалов Павел
+											</div>
+											<div class="cabinet__top-s">
+												Дата регистрации: 12.05.2023
+											</div>
+										</div>
+									</div>
+									<table class="cabinet__info">
+										<tbody class="cabinet__info-list">
+											<tr class="cabinet__info-item">
+												<td class="cabinet__info-l">
+													Телефон:
+												</td>
+												<td class="cabinet__info-r">
+													<a href="tel:8 981 978 45 56">8 981 978 45 56</a>
+												</td>
+											</tr>
+											<tr class="cabinet__info-item">
+												<td class="cabinet__info-l">
+													E-mail:
+												</td>
+												<td class="cabinet__info-r">
+													<a href="mailto:idea@mail.ru">idea@mail.ru</a>
+												</td>
+											</tr>
+											<tr class="cabinet__info-item">
+												<td class="cabinet__info-l">
+													Компания:
+												</td>
+												<td class="cabinet__info-r">
+													ИДЕЯ
+												</td>
+											</tr>
+											<tr class="cabinet__info-item">
+												<td class="cabinet__info-l">
+													Должность:
+												</td>
+												<td class="cabinet__info-r">
+													Руководитель
+												</td>
+											</tr>
+											<tr class="cabinet__info-item">
+												<td class="cabinet__info-l">
+													О себе:
+												</td>
+												<td class="cabinet__info-r">
+													Бурение горизонтальных скважин в сложных горно-геологических условиях при АНПД с содержанием сероводорода и газовой шапкой. 
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="cabinet__btns">
+										<a class="ui-btn ui-btn--t2 ui-btn--t2-dark" type="button">
+											<span class="ui-btn__text">
+												Редактировать
+											</span>
+											<span class="ui-btn__icon ui-btn__icon--arr">
+												<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-btn-arrow"></use></svg>
+											</span>
+										</a>
+										<a class="ui-btn ui-btn--t3 ui-btn--t3-green" type="button">
+											<span class="ui-btn__text">
+												Изменить пароль
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="cabinet__main-item">
+							<div class="cabinet__top">
+								<div class="cabinet__top-i">
+									<div class="cabinet__top-ttl">
+										Профиль деятельности и интересы
+									</div>
+								</div>
+							</div>
+							<div class="cabinet__more">
+								<div class="cabinet__more-item cabinet__area">
+									<div class="cabinet__area-item">
+										<div class="ui-select ui-select--c4">
+											<select multiple data-placeholder="Выбрать">
+												<option value="area1" data-area="area1" selected>
+													бурение
+												</option>
+												<option value="area2" data-area="area2" selected>
+													геологоразведка
+												</option>
+												<option value="area3" data-area="area3" selected>
+													добыча
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="cabinet__area-item cabinet__area-selected">
+										<button class="cabinet__area-sel" data-area-remove="area1">
+											бурение
+										</button>
+										<button class="cabinet__area-sel" data-area-remove="area2">
+											геологоразведка
+										</button>
+										<button class="cabinet__area-sel" data-area-remove="area3">
+											добыча
+										</button>
+									</div>
+								</div>
+								<div class="cabinet__more-item">
+									<label class="ui-check ui-check--green">
+										<input type="checkbox" checked />
+										<span class="ui-check__icon ui-check__icon--cb"></span>
+										<span class="ui-check__text">
+											Получать рассылку с новостями, статьями от компаний с такими же интересами 
+										</span>
+									</label>
+								</div>
+								<div class="cabinet__more-item">
+									<label class="ui-check ui-check--green">
+										<input type="checkbox" checked />
+										<span class="ui-check__icon ui-check__icon--cb"></span>
+										<span class="ui-check__text">
+											Получать рассылку со всеми новостями
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="cabinet__btns">
+								<button class="ui-btn ui-btn--t2 ui-btn--t2-dark" type="button" disabled>
+									<span class="ui-btn__text">
+										Сохранить
+									</span>
+									<span class="ui-btn__icon ui-btn__icon--arr">
+										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-btn-arrow"></use></svg>
+									</span>
+								</button>
+							</div>
+						</div>
+						<div class="cabinet__main-item cabinet__remove">
+							<a class="cabinet__remove-btn">
+								Удалить учетную запись
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+@@include('@@webRoot/template/_footer.html')
+@@include('@@webRoot/template/_popups-cabinet.html')
+@@include('@@webRoot/template/_foot.html')
+</body>
+</html>

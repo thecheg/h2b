@@ -1,0 +1,290 @@
+.header {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:20;
+
+	--header-logo:#fff;
+	--header-logo-h:#a9e3e7;
+
+	--header-color:#fff;
+	--header-color-h:#a9e3e7;
+
+	--header-search:#E8FFFF;
+	--header-search-h:#a9e3e7;
+
+	&__block {
+		display:flex;
+		align-items:center;
+		justify-content:space-between;
+		gap:20px;
+		height:var(--header-height);
+	}
+
+	&__left {
+		flex-shrink: 0;
+	}
+
+	&__logo {
+		display:block;
+		aspect-ratio:116/55;
+		width:86px;
+		position:relative;
+
+		& svg {
+			position:absolute;
+			left:0;
+			top:0;
+			fill:var(--header-logo);
+			transition:fill .2s;
+		}
+
+		html.no-touch &:hover {
+			& svg {
+				fill:var(--header-logo-h);
+			}
+		}
+	}
+
+	&__main {
+		&-in {
+			display:flex;
+			align-items:center;
+			gap:20px;
+		}
+	}
+
+	&__menu {
+		&-list {
+			display:flex;
+			align-items:center;
+			gap:30px;
+		}
+
+		&-link {
+			display:flex;
+			align-items:center;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 20px;
+			letter-spacing: -0.01em;
+			color:var(--header-color);
+			position:relative;
+
+			html.no-touch &:hover,
+			&.current {
+				color:var(--header-color-h);
+			}
+
+			&.current {
+				padding-left:15px;
+
+				&:before {
+					content:'';
+					position:absolute;
+					left:0;
+					top:50%;
+					transform:translateY(-50%);
+					width:5px;
+					aspect-ratio: 1/1;
+					background:var(--header-color-h);
+					display:block;
+					border-radius:100%;
+				}
+			}
+		}
+	}
+
+	&__search {
+		flex-shrink: 0;
+
+		&-btn {
+			display:block;
+			width:24px;
+			aspect-ratio: 1/1;
+
+			& svg {
+				fill:var(--header-search);
+				transition:fill .2s;
+			}
+
+			html.no-touch &:hover {
+				& svg {
+					fill:var(--header-search-h);
+				}
+			}
+		}
+	}
+
+	&__login {
+		flex-shrink: 0;
+	}
+
+	&__toggle {
+		@media only screen and (min-width: 801px) {
+			display:none;
+		}
+	}
+
+	&__cabinet {
+		position:relative;
+
+		&-avatar {
+			width:48px;
+			aspect-ratio: 1/1;
+			border-radius:100%;
+			overflow:hidden;
+			background: #1E2C2F;
+			position:relative;
+			transition:background .2s;
+			cursor:pointer;
+
+			&:before {
+				content:'';
+				display:block;
+				position:absolute;
+				inset: 0;
+				background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+				opacity: .24;
+			}
+
+			& img {
+				position:relative;
+			}
+
+			html.no-touch &:hover {
+				background: #4B9A9D;
+			}
+		}
+
+		&-name {
+			position:absolute;
+			inset:0;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			font-weight: 600;
+			font-size: 10px;
+			line-height:1em;
+			text-transform: uppercase;
+			color:#fff;
+		}
+		
+		@media only screen and (min-width: 801px) {
+
+			&-pop {
+				position:absolute;
+				right:0;
+				top:calc(100% + 10px);
+				background: #FFFFFF;
+				box-shadow: 0px 4px 16px rgba(17, 16, 31, 0.05);
+				border-radius: 16px;
+				min-width:180px;
+				overflow:hidden;
+				transition:opacity .2s, visibility .2s;
+				transition-delay:.1s;
+				opacity:0;
+				visibility: hidden;
+
+				&:before {
+					content:'';
+					position:absolute;
+					right:0;
+					bottom:100%;
+					left:0;
+					top:-12px;
+				}
+			}
+
+			&-item {
+
+			}
+
+			&-link {
+				display:block;
+				padding:8px 12px;
+				color:#11101F;
+				font-size:12px;
+				line-height:1.2em;
+
+				html.no-touch &:hover {
+					background:#F4F6F9;
+				}
+			}
+
+			//html.no-touch &:hover &,
+			&.active & {
+				&-avatar {
+					background: #4B9A9D;
+				}
+
+				&-pop {
+					opacity:1;
+					visibility: visible;
+					transition-delay:0;
+				}
+			}
+		}
+	}
+
+	[data-theme="cabinet"] & {
+		--header-logo:#4B9A9D;
+		--header-logo-h:#{$color-green2};
+
+		--header-color:#818181;
+		--header-color-h:#{$color-green2};
+
+		--header-search:#292929;
+		--header-search-h:#{$color-green2};
+	}
+}
+
+.menu {
+	&-toggle {
+		display:block;
+		cursor:pointer;
+		width:40px;
+		height:40px;
+		position:relative;
+		z-index:2;
+		flex-shrink: 0;
+		border-radius:100%;
+		background:$color-text;
+		transition:background .2s;
+	
+		&__line {
+			height:2px;
+			background:#A9E3E7;
+			position:absolute;
+			left:10px;
+			top:19px;
+			width:20px;
+			transition:all .2s, margin-top .2s .2s;
+	
+			&:nth-child(1) {
+				margin-top:-2px;
+			}
+	
+			&:nth-child(2) {
+				margin-top:2px;
+			}
+	
+			.app--menu-opened & {
+				margin-top:0!important;
+				transition:transform .2s .2s, all .2s;
+
+				&:nth-child(1) {
+					transform:rotate(45deg) translateY(0);
+				}
+	
+				&:nth-child(2) {
+					transform:rotate(-45deg) translateY(0);
+				}
+			}
+		}
+
+		html.no-touch &:hover {
+			background:$color-green;
+		}
+	}
+}

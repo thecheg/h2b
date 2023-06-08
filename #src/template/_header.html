@@ -1,0 +1,85 @@
+		<header class="header">
+			<div class="container header__block">
+				<div class="header__left">
+					<a class="header__logo" href="@@webRoot/">
+						<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>
+					</a>
+				</div>
+				<div class="header__main">
+					<div class="header__main-in">
+						<nav class="header__menu">
+							<ul class="header__menu-list">
+								<li class="header__menu-item">
+									<a class="header__menu-link current" href="@@webRoot/">
+										Для бизнеса
+									</a>
+								</li>
+								<li class="header__menu-item">
+									<a class="header__menu-link" href="@@webRoot/">
+										Блог
+									</a>
+								</li>
+								<li class="header__menu-item">
+									<a class="header__menu-link" href="@@webRoot/">
+										О платформе
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="header__search">
+							<a class="header__search-btn">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use></svg>
+							</a>
+						</div>
+					@@if (!context.type) {
+						<div class="header__login">
+							<a class="ui-btn ui-btn--t1 ui-btn--dark" href="javascript:void(0);">
+								<span class="ui-btn__round"></span>
+								<span class="ui-btn__text">
+									Войти
+								</span>
+							</a>
+						</div>
+					}
+					@@if (context.type && context.type === 'cabinet') {
+						<div class="header__cabinet">
+							<div class="header__cabinet-avatar">
+								<div class="header__cabinet-name">ПП</div>
+							</div>
+							<ul class="header__cabinet-pop">
+								<li class="header__cabinet-item">
+									<a class="header__cabinet-link">
+										Мой профиль
+									</a>
+								</li>
+								<li class="header__cabinet-item">
+									<a class="header__cabinet-link">
+										Моя компания
+									</a>
+								</li>
+								<li class="header__cabinet-item">
+									<a class="header__cabinet-link">
+										Мои предложения
+									</a>
+								</li>
+								<li class="header__cabinet-item">
+									<a class="header__cabinet-link">
+										Уведомления
+									</a>
+								</li>
+								<li class="header__cabinet-item">
+									<a class="header__cabinet-link">
+										Помощь
+									</a>
+								</li>
+							</ul>
+						</div>
+					}
+					</div>
+				</div>
+				<div class="header__toggle menu-toggle">
+					<div class="menu-toggle__line"></div>
+					<div class="menu-toggle__line"></div>
+				</div>
+			</div>
+		</header>

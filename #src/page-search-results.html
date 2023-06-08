@@ -1,0 +1,530 @@
+@@include('@@webRoot/template/_head.html',{
+	'pageTitle': 'Поиск',
+	'pageKeywords': '',
+	'pageDescription': ''
+})
+</head>
+<body class="app">
+@@include('@@webRoot/template/_header.html')
+	<main class="app__content">
+		<section class="section first first--s">
+			<div class="first__bg first__bg--4"></div>
+			<div class="container">
+				<header class="head head--in-cont head--no-m first__head">
+					<h1 class="head__btitle">
+						Поиск
+					</h1>
+					<div class="head__subtitle first__subtitle" style="max-width:996px;">
+						В результатах поиска будут отображаться материалы по&nbsp;интересующим вас направлениям нефтегазового бизнеса. Выберите одно или&nbsp;несколько направлений и&nbsp;просто начните печатать
+					</div>
+				</header>
+			</div>
+		</section>
+		<section class="section section--h search" style="--section-bg:#E8FFFF;">
+			<div class="container">
+				<div class="search__line search__line--r">
+					<form class="search__line-in">
+						<div class="search__line-left">
+							<div class="ui-select ui-select--t2 ui-select--c3">
+								<select multiple data-placeholder="Категории">
+									<option>
+										Новости
+									</option>
+									<option>
+										Интервью
+									</option>
+									<option>
+										Статья
+									</option>
+									<option>
+										Бизнес-страницы
+									</option>
+									<option>
+										Каталог предложений
+									</option>
+								</select>
+							</div>
+						</div>
+						<div class="search__line-right">
+							<div class="search__line-inp">
+								<input type="text" placeholder="Введите запрос" value="Бурение" />
+							</div>
+							<div class="search__line-clear">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cross"></use></svg>
+							</div>
+							<button class="search__line-btn" type="submit">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use></svg>
+							</button>
+						</div>
+					</form>
+				</div>
+				<div class="search__tabs ui-tabs" data-tabs="search">
+					<a class="ui-simplebtn ui-simplebtn--category search__tabs-item ui-tabs__item" type="button" data-tab="search1">
+						Бизнес-страницы
+					</a>
+					<a class="ui-simplebtn ui-simplebtn--category search__tabs-item ui-tabs__item" type="button" data-tab="search2">
+						Каталог предложений
+					</a>
+					<a class="ui-simplebtn ui-simplebtn--category search__tabs-item ui-tabs__item" type="button" data-tab="search3">
+						Статьи
+					</a>
+					<a class="ui-simplebtn ui-simplebtn--category search__tabs-item ui-tabs__item" type="button" data-tab="search4">
+						Интервью
+					</a>
+					<a class="ui-simplebtn ui-simplebtn--category search__tabs-item ui-tabs__item" type="button" data-tab="search5">
+						Новости
+					</a>
+				</div>
+				<div class="search__results ui-tabs-content" data-tabs="search" data-tab="search1">
+					<div class="search__found ui-sort">
+						<div class="ui-sort__col">
+							<div class="ui-sort__total">
+								Найдено <span>2 компании</span>
+							</div>
+						</div>
+					</div>
+					<div class="search__companies">
+						<div class="search__companies-item">
+							<a class="ui-company">
+								<div class="ui-company__left">
+									<div class="ui-company__logo">
+										<img src="@@webRoot/images/company1.jpg" alt="" loading="lazy" />
+									</div>
+								</div>
+								<div class="ui-company__center">
+									<div class="ui-badges ui-company__feats">
+										<div class="ui-badges__item" style="--feat-bg:#1E2C2F;--feat-color:#fff;">
+											Ассоциация
+										</div>
+										<div class="ui-badges__item" style="--feat-bg:#2A87CE;--feat-color:#fff;">
+											<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cert"></use></svg> С оценкой ИНТИ
+										</div>
+									</div>
+									<div class="ui-company__ttl">
+										Ассоциация Буровых Подрядчиков
+									</div>
+									<div class="ui-company__loc">
+										Россия, Москва
+									</div>
+									<div class="ui-company__text">
+										Отечественная Ассоциация буровых подрядчиков была создана в 1991 году. Ее основатели – буровые предприятия и организации Министерств нефтяной и газовой промышленности.
+									</div>
+									<div class="ui-tags ui-company__tags">
+										<div class="ui-tags__item">
+											#бурение
+										</div>
+										<div class="ui-tags__item">
+											#геологоразведка
+										</div>
+										<div class="ui-tags__item">
+											#добыча
+										</div>
+									</div>
+								</div>
+								<div class="ui-company__details">
+									<div class="ui-company__details-item">
+										Год основания <span>1991</span>
+									</div>
+									<div class="ui-company__details-item">
+										Сотрудников <span>10-50</span>
+									</div>
+									<div class="ui-company__details-item">
+										Размещено продуктов <span>40</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="search__companies-item">
+							<a class="ui-company">
+								<div class="ui-company__left">
+									<div class="ui-company__logo">
+										<img src="@@webRoot/images/company2.jpg" alt="" loading="lazy" />
+									</div>
+								</div>
+								<div class="ui-company__center">
+									<div class="ui-badges ui-company__feats">
+										<div class="ui-badges__item" style="--feat-bg:#1E2C2F;--feat-color:#fff;">
+											Ассоциация
+										</div>
+									</div>
+									<div class="ui-company__ttl">
+										PETROPORTAL
+									</div>
+									<div class="ui-company__loc">
+										Россия, Москва
+									</div>
+									<div class="ui-company__text">
+										Отечественная Ассоциация буровых подрядчиков была создана в 1991 году. Ее основатели – буровые предприятия и организации Министерств нефтяной и газовой промышленности.
+									</div>
+									<div class="ui-tags ui-company__tags">
+										<div class="ui-tags__item">
+											#бурение
+										</div>
+										<div class="ui-tags__item">
+											#геологоразведка
+										</div>
+										<div class="ui-tags__item">
+											#добыча
+										</div>
+									</div>
+								</div>
+								<div class="ui-company__details">
+									<div class="ui-company__details-item">
+										Год основания <span>-</span>
+									</div>
+									<div class="ui-company__details-item">
+										Сотрудников <span>-</span>
+									</div>
+									<div class="ui-company__details-item">
+										Размещено продуктов <span>-</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="search__results ui-tabs-content" data-tabs="search" data-tab="search2">
+					<div class="search__found ui-sort">
+						<div class="ui-sort__col">
+							<div class="ui-sort__total">
+								Найдено <span>4 предложения</span>
+							</div>
+						</div>
+					</div>
+					<div class="ui-grid search__offers">
+						<div class="ui-grid__col search__offers-col">
+							<div class="ui-offer">
+								<div class="ui-offer__img">
+									<img src="@@webRoot/images/offer1.jpg" alt="" />
+								</div>
+								<div class="ui-offer__body">
+									<div class="ui-offer__tags ui-tags">
+										<div class="ui-tags__item">
+											#бурение
+										</div>
+										<div class="ui-tags__item">
+											#добыча
+										</div>
+										<div class="ui-tags__item">
+											#геологоразведка
+										</div>
+										<div class="ui-tags__item">
+											#бурение
+										</div>
+										<div class="ui-tags__item">
+											#добыча
+										</div>
+										<div class="ui-tags__item ui-tags__more ui-offer__tags-more"></div>
+									</div>
+									<div class="ui-offer__text">
+										Разработка нормативно-технической документации для основного и вспомогательного оборудования ПБУ
+									</div>
+								</div>
+								<div class="ui-offer__bot">
+									<div class="ui-offer__price">
+										
+									</div>
+									<div class="ui-offer__btn">
+										<a class="ui-simplebtn ui-simplebtn--s2 ui-simplebtn--border-green">
+											Связаться
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="ui-grid__col search__offers-col">
+							<div class="ui-offer">
+								<div class="ui-offer__img">
+									<img src="@@webRoot/images/offer1.jpg" alt="" />
+									<div class="ui-badges ui-offer__badges">
+										<div class="ui-badges__item" style="--feat-bg:#1E2C2F;--feat-color:#fff;">
+											Онлайн-продажи
+										</div>
+									</div>
+								</div>
+								<div class="ui-offer__body">
+									<div class="ui-offer__tags ui-tags">
+										<div class="ui-tags__item">
+											#бурение
+										</div>
+										<div class="ui-tags__item">
+											#добыча
+										</div>
+										<div class="ui-tags__item">
+											#геологоразведка
+										</div>
+										<div class="ui-tags__item">
+											#бурение
+										</div>
+										<div class="ui-tags__item">
+											#добыча
+										</div>
+										<div class="ui-tags__item ui-tags__more ui-offer__tags-more"></div>
+									</div>
+									<div class="ui-offer__text">
+										Создание Бизнес Плана. Для получения инвестиционного Кредитования.
+									</div>
+								</div>
+								<div class="ui-offer__bot">
+									<div class="ui-offer__price">
+										1 000 руб.
+									</div>
+									<div class="ui-offer__btn">
+										<a class="ui-simplebtn ui-simplebtn--s2 ui-simplebtn--border-green">
+											Связаться
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="ui-grid__col search__offers-col">
+							<div class="ui-offer">
+								<div class="ui-offer__img">
+									<img src="@@webRoot/images/offer1.jpg" alt="" />
+								</div>
+								<div class="ui-offer__body">
+									<div class="ui-offer__tags ui-tags">
+										<div class="ui-tags__item">
+											#бурение
+										</div>
+										<div class="ui-tags__item">
+											#добыча
+										</div>
+										<div class="ui-tags__item">
+											#геологоразведка
+										</div>
+										<div class="ui-tags__item">
+											#бурение
+										</div>
+										<div class="ui-tags__item">
+											#добыча
+										</div>
+										<div class="ui-tags__item ui-tags__more ui-offer__tags-more"></div>
+									</div>
+									<div class="ui-offer__text">
+										Разработка нормативно-технической документации для основного и вспомогательного оборудования ПБУ
+									</div>
+								</div>
+								<div class="ui-offer__bot">
+									<div class="ui-offer__price">
+										
+									</div>
+									<div class="ui-offer__btn">
+										<a class="ui-simplebtn ui-simplebtn--s2 ui-simplebtn--border-green">
+											Связаться
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="ui-grid__col search__offers-col">
+							<div class="ui-offer">
+								<div class="ui-offer__img">
+									<img src="@@webRoot/images/offer1.jpg" alt="" />
+									<div class="ui-badges ui-offer__badges">
+										<div class="ui-badges__item" style="--feat-bg:#1E2C2F;--feat-color:#fff;">
+											Онлайн-продажи
+										</div>
+									</div>
+								</div>
+								<div class="ui-offer__body">
+									<div class="ui-offer__tags ui-tags">
+										<div class="ui-tags__item">
+											#бурение
+										</div>
+										<div class="ui-tags__item">
+											#добыча
+										</div>
+										<div class="ui-tags__item">
+											#геологоразведка
+										</div>
+										<div class="ui-tags__item">
+											#бурение
+										</div>
+										<div class="ui-tags__item">
+											#добыча
+										</div>
+										<div class="ui-tags__item ui-tags__more ui-offer__tags-more"></div>
+									</div>
+									<div class="ui-offer__text">
+										Создание Бизнес Плана. Для получения инвестиционного Кредитования.
+									</div>
+								</div>
+								<div class="ui-offer__bot">
+									<div class="ui-offer__price">
+										1 000 руб.
+									</div>
+									<div class="ui-offer__btn">
+										<a class="ui-simplebtn ui-simplebtn--s2 ui-simplebtn--border-green">
+											Связаться
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="search__results ui-tabs-content" data-tabs="search" data-tab="search3">
+					<div class="search__found ui-sort">
+						<div class="ui-sort__col">
+							<div class="ui-sort__total">
+								Найдено <span>6 статей</span>
+							</div>
+						</div>
+					</div>
+					<div class="ui-grid search__news">
+						<div class="ui-grid__col search__news-col">
+							<a class="ui-entry" href="page-article.html">
+								<div class="ui-entry__img">
+									<picture>
+										<source srcset="@@webRoot/images/blog1.webp" type="image/webp">
+										<source srcset="@@webRoot/images/blog1.jpg" type="image/jpeg">
+										<img src="@@webRoot/images/blog1.jpg" alt="" />
+									</picture>
+								</div>
+								<div class="ui-entry__ttl">
+									Проектное управление — когда ничего не понятно, но очень интересно
+								</div>
+								<div class="ui-entry__bot">
+									<div class="ui-entry__date">
+										17 февраля 2023
+									</div>
+									<div class="ui-entry__type">
+										Интервью
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="ui-grid__col search__news-col">
+							<a class="ui-entry" href="page-article.html">
+								<div class="ui-entry__img">
+									<picture>
+										<source srcset="@@webRoot/images/blog1.webp" type="image/webp">
+										<source srcset="@@webRoot/images/blog1.jpg" type="image/jpeg">
+										<img src="@@webRoot/images/blog1.jpg" alt="" />
+									</picture>
+								</div>
+								<div class="ui-entry__ttl">
+									Проектное управление — когда ничего не понятно, но очень интересно
+								</div>
+								<div class="ui-entry__bot">
+									<div class="ui-entry__date">
+										17 февраля 2023
+									</div>
+									<div class="ui-entry__type">
+										Интервью
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="ui-grid__col search__news-col">
+							<a class="ui-entry" href="page-article.html">
+								<div class="ui-entry__img">
+									<picture>
+										<source srcset="@@webRoot/images/blog1.webp" type="image/webp">
+										<source srcset="@@webRoot/images/blog1.jpg" type="image/jpeg">
+										<img src="@@webRoot/images/blog1.jpg" alt="" />
+									</picture>
+								</div>
+								<div class="ui-entry__ttl">
+									Проектное управление — когда ничего не понятно, но очень интересно
+								</div>
+								<div class="ui-entry__bot">
+									<div class="ui-entry__date">
+										17 февраля 2023
+									</div>
+									<div class="ui-entry__type">
+										Интервью
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="ui-grid__col search__news-col">
+							<a class="ui-entry" href="page-article.html">
+								<div class="ui-entry__img">
+									<picture>
+										<source srcset="@@webRoot/images/blog1.webp" type="image/webp">
+										<source srcset="@@webRoot/images/blog1.jpg" type="image/jpeg">
+										<img src="@@webRoot/images/blog1.jpg" alt="" />
+									</picture>
+								</div>
+								<div class="ui-entry__ttl">
+									Проектное управление — когда ничего не понятно, но очень интересно
+								</div>
+								<div class="ui-entry__bot">
+									<div class="ui-entry__date">
+										17 февраля 2023
+									</div>
+									<div class="ui-entry__type">
+										Интервью
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="ui-grid__col search__news-col">
+							<a class="ui-entry" href="page-article.html">
+								<div class="ui-entry__img">
+									<picture>
+										<source srcset="@@webRoot/images/blog1.webp" type="image/webp">
+										<source srcset="@@webRoot/images/blog1.jpg" type="image/jpeg">
+										<img src="@@webRoot/images/blog1.jpg" alt="" />
+									</picture>
+								</div>
+								<div class="ui-entry__ttl">
+									Проектное управление — когда ничего не понятно, но очень интересно
+								</div>
+								<div class="ui-entry__bot">
+									<div class="ui-entry__date">
+										17 февраля 2023
+									</div>
+									<div class="ui-entry__type">
+										Интервью
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="ui-grid__col search__news-col">
+							<a class="ui-entry" href="page-article.html">
+								<div class="ui-entry__img">
+									<picture>
+										<source srcset="@@webRoot/images/blog1.webp" type="image/webp">
+										<source srcset="@@webRoot/images/blog1.jpg" type="image/jpeg">
+										<img src="@@webRoot/images/blog1.jpg" alt="" />
+									</picture>
+								</div>
+								<div class="ui-entry__ttl">
+									Проектное управление — когда ничего не понятно, но очень интересно
+								</div>
+								<div class="ui-entry__bot">
+									<div class="ui-entry__date">
+										17 февраля 2023
+									</div>
+									<div class="ui-entry__type">
+										Интервью
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="search__results ui-tabs-content" data-tabs="search" data-tab="search4">
+
+				</div>
+				<div class="search__results ui-tabs-content" data-tabs="search" data-tab="search5">
+					<div class="search__no">
+						<div class="search__no-icon">
+							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search-no"></use></svg>
+						</div>
+						<div class="search__no-text">
+							По вашему запросу не&nbsp;нашлось ни&nbsp;одного результата. Уточните запрос или&nbsp;выберите одно или&nbsp;несколько направлений.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+@@include('@@webRoot/template/_footer.html')
+@@include('@@webRoot/template/_popups.html')
+@@include('@@webRoot/template/_foot.html')
+</body>
+</html>

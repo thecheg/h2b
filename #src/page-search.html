@@ -1,0 +1,109 @@
+@@include('@@webRoot/template/_head.html',{
+	'pageTitle': 'Поиск',
+	'pageKeywords': '',
+	'pageDescription': ''
+})
+</head>
+<body class="app">
+@@include('@@webRoot/template/_header.html')
+	<main class="app__content">
+		<section class="section first first--s">
+			<div class="first__bg first__bg--4"></div>
+			<div class="container">
+				<header class="head head--in-cont head--no-m first__head">
+					<h1 class="head__btitle">
+						Поиск
+					</h1>
+					<div class="head__subtitle first__subtitle" style="max-width:996px;">
+						В результатах поиска будут отображаться материалы по&nbsp;интересующим вас направлениям нефтегазового бизнеса. Выберите одно или&nbsp;несколько направлений и&nbsp;просто начните печатать
+					</div>
+				</header>
+			</div>
+		</section>
+		<section class="section search" style="--section-bg:#E8FFFF;">
+			<div class="container">
+				<div class="search__line">
+					<form class="search__line-in">
+						<div class="search__line-left">
+							<div class="ui-select ui-select--t2 ui-select--c3">
+								<select multiple data-placeholder="Категории">
+									<option>
+										Новости
+									</option>
+									<option>
+										Интервью
+									</option>
+									<option>
+										Статья
+									</option>
+									<option>
+										Бизнес-страницы
+									</option>
+									<option>
+										Каталог предложений
+									</option>
+								</select>
+							</div>
+						</div>
+						<div class="search__line-right">
+							<div class="search__line-inp">
+								<input type="text" placeholder="Введите запрос" />
+							</div>
+							<div class="search__line-clear">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cross"></use></svg>
+							</div>
+							<button class="search__line-btn" type="submit">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use></svg>
+							</button>
+						</div>
+					</form>
+				</div>
+				<div class="ui-grid search__start">
+					<div class="ui-grid__col search__start-col">
+						<a class="ui-category ui-category--s">
+							<div class="ui-category__icon">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-category3"></use></svg>
+							</div>
+							<div class="ui-category__ttl">
+								Каталог бизнес-страниц
+							</div>
+							<div class="ui-category__text">
+								Перечень компаний с&nbsp;унифицированной информацией для&nbsp;удобства выбора и&nbsp;принятия решения
+							</div>
+						</a>
+					</div>
+					<div class="ui-grid__col search__start-col">
+						<a class="ui-category ui-category--s">
+							<div class="ui-category__icon">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-category1"></use></svg>
+							</div>
+							<div class="ui-category__ttl">
+								Каталог предложений
+							</div>
+							<div class="ui-category__text">
+								Каталог продуктов, оборудования, услуг, технологий, практик от&nbsp;различных компаний в&nbsp;добывающей промышленности
+							</div>
+						</a>
+					</div>
+					<div class="ui-grid__col search__start-col">
+						<a class="ui-category ui-category--s">
+							<div class="ui-category__icon">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-category1"></use></svg>
+							</div>
+							<div class="ui-category__ttl">
+								Блог
+							</div>
+							<div class="ui-category__text">
+								Свежие и интересные статьи, интервью, публикации от&nbsp;участников, парнеров и&nbsp;команды&nbsp;H2B
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+@@include('@@webRoot/template/_footer.html')
+@@include('@@webRoot/template/_popups.html')
+@@include('@@webRoot/template/_foot.html')
+</body>
+</html>

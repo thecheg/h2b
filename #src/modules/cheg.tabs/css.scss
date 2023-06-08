@@ -1,0 +1,53 @@
+.ui {
+	&-tabs {
+		&__item.active,
+		&-trigger.active {
+			pointer-events: none;
+		}
+		
+		&-content {
+			&:not(&--fh) {
+				width: 100%;
+				position: absolute;
+				left: -9999px;
+				top: 0;
+				opacity: 0;
+				visibility: hidden;
+				pointer-events: none;
+		
+				&.active {
+					width: auto;
+					position: relative;
+					left: auto;
+					top: auto;
+				}
+			}
+		
+			&--fh {
+				width: 100%;
+				flex-shrink: 0;
+				order: 3;
+		
+				&.active {
+					order: 1;
+				}
+			}
+		
+			&.active {
+				opacity: 1;
+				visibility: visible;
+				pointer-events: auto;
+				transition: opacity .2s, visibility .2s;
+			}
+		}
+
+		&-contents {
+			position: relative;
+
+			&--fh {
+				display: flex;
+				flex-wrap: nowrap;
+			}
+		}
+	}
+}
