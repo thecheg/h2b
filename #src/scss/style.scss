@@ -1975,6 +1975,12 @@ html:not(.browser-firefox) {
 		&-item {
 			width:260px;
 		}
+
+		&-post {
+			display:flex;
+			gap:20px;
+			flex-wrap:wrap;
+		}
 	}
 
 	&__list {
@@ -1989,6 +1995,7 @@ html:not(.browser-firefox) {
 
 	&__pages {
 		margin-top:40px;
+		width:100%;
 	}
 
 	&__more {
@@ -3288,6 +3295,7 @@ html:not(.browser-firefox) {
 
 	&__pager {
 		margin-top:40px;
+		width:100%;
 	}
 
 	&__companies {
